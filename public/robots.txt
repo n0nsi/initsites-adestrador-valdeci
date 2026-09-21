@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+# DEMONSTRAÇÃO NÃO OFICIAL — liberar indexação somente após autorização do cliente.

@@ -1,0 +1,20 @@
+{
+  "name": "initsites-adestrador-valdeci",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "quality": "npm run build && npm run validate",
+    "dev": "npm run build && wrangler dev --local",
+    "check:deploy": "npm run quality && wrangler deploy --dry-run",
+    "deploy": "npm run quality && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.135.0"
+  }
+}
