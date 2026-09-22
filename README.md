@@ -99,3 +99,11 @@ Veja `research.md` para URLs, dados confirmados e divergências.
 - texto institucional;
 - política de privacidade/termos, se aplicável;
 - remoção do aviso de demonstração após contratação/autorização.
+
+## Redesign editorial v2
+
+Hero com ilustração SVG original de um cão, identidade tipográfica conceitual e reputação pública datada. Navegação móvel acessível, seleção de assunto com mensagem contextual de WhatsApp, CTA móvel e transições com respeito a `prefers-reduced-motion`. Nenhuma fonte, biblioteca ou serviço externo é necessário para renderizar a página.
+
+A seção de primeiros passos orienta a conversa inicial; não apresenta um método de treinamento, garantia ou certificação do profissional. Não foram adicionados depoimentos nem alegações de resultados.
+
+`public/_headers` aplica CSP restritiva, proteção contra enquadramento, política de referência e `noindex,nofollow`. Build e `npm run quality` verificam estrutura, assets, âncoras, JSON-LD, proteções da demonstração e orçamento de JavaScript. O deploy continua no Worker original, exclusivamente com Static Assets.
